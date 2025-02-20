@@ -1,0 +1,20 @@
+POST http://localhost:3000/users/create 
+Content-Type: application/json 
+
+{
+    "name": "Peter Doe",
+    "email": "mburukiganya@gmail.com",
+    "phone_number":"0734100009",
+    "password": "Pass@123"
+}
+
+
+### LOGIN
+POST http://localhost:3000/auth/login 
+Content-Type: application/json
+
+{
+    "email": "alvin@yopmail.com",
+    "password": "12345678"
+}
+

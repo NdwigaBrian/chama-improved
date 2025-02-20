@@ -1,0 +1,13 @@
+.circle {
+    width: 700px;
+    height: 150px;
+    border: 2px solid #000;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin-left: 250px;
+}
