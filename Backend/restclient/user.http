@@ -1,10 +1,9 @@
-POST http://localhost:3000/users/create 
+POST http://localhost:3000/users
 Content-Type: application/json 
 
 {
     "name": "Peter Doe",
-    "email": "mburukiganya@gmail.com",
-    "phone_number":"0734100009",
+    "email": "brayohndwiga@gmail.com",
     "password": "Pass@123"
 }
 
@@ -14,7 +13,7 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-    "email": "alvin@yopmail.com",
-    "password": "12345678"
+    "email": "brayohndwiga.com",
+    "password": "Pass@123"
 }
 

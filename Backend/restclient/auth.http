@@ -1,0 +1,16 @@
+### LOGIN
+POST http://localhost:3000/auth/login 
+Content-Type: application/json
+
+{
+    "email": "brayohndwiga@gmail.com",
+    "password": "Pass@123"
+}
+
+
+### Check token details
+GET http://localhost:3000/auth/check-details 
+Content-Type: application/json
+token: deyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA0NDhkMDUxLTliMGEtNGI4NS04MDIyLTYzMWQ5YmE4NjE3OCIsIm5hbWUiOiJTYW1teSBEb2UiLCJlbWFpbCI6InNhbW15bXV0aHV1cmlraW55dWFAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNXZWxjb21lZCI6dHJ1ZSwiaXNEZWxldGVkIjpmYWxzZSwiaWF0IjoxNzE3NjY5MDA3LCJleHAiOjE3MTc2NzYyMDd9.T3L5UMx4m0mgaZ8xK_Woqd1Uc1km66zMKotuoL_tJG0
+
+

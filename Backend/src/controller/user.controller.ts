@@ -24,46 +24,15 @@ export class userController {
         }
     }
 
-    async fetchAll(req: Request, res: Response) {
+    async loginUser(req: Request, res: Response) {
         try {
-            let result = await service.fetchAllUsers()
+            let { email, password } = req.body
 
-            return res.status(201).json(result)
+            let response = await service.login(req.body)
 
+            return res.status(200).json(response)
         } catch (error) {
-            return res.json({
-                error
-            })
+            return res.status(500).json({ error })
         }
     }
-
-    async fetchSingleUser(req:Request, res:Response){
-        try {
-            let {user_id} = req.params
-
-            let response = await service.fetchSingleUser(user_id)
-            
-            return res.json(response)
-
-        } catch (error) {
-            return res.json({
-                error
-            })
-        }
-    }
-
-    async switchRoles(req:Request, res:Response){
-        try {
-            let {user_id} = req.body
-
-            let response = await service.switchRoles(user_id)
-
-            return res.json(response)
-        } catch (error) {
-            return res.json({
-                error
-            })
-        }
-    }
-
 }
