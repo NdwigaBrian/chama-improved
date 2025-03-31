@@ -26,11 +26,8 @@ export class userService {
             // Create new user
             const newUser = new User({
                 id: uuidv4(),
-                name: userData.name,
-                email: userData.email,
-                phone_number: userData.phone_number,
+                usernname: userData.username,
                 password: hashedPassword,
-                role: 'user', // Default role
                 createdAt: new Date().toISOString(),
             });
 

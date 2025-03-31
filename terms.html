@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - ROSCA System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #34495e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background: #f8f9fa;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .terms-container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 3rem;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 2rem;
+            height: fit-content;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .nav-title {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+        }
+
+        .nav-links {
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0.5rem 0;
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .content {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .last-updated {
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .term-section {
+            margin-bottom: 3rem;
+        }
+
+        .term-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+            position: relative;
+        }
+
+        .term-section h2::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--secondary-color);
+        }
+
+        .term-section p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--secondary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .terms-container {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+
+            .sidebar {
+                position: static;
+                margin-bottom: 2rem;
+            }
+
+            .content {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="terms-container">
+        <nav class="sidebar">
+            <h3 class="nav-title">Quick Navigation</h3>
+            <ul class="nav-links">
+                <li><a href="#acceptance">1. Acceptance</a></li>
+                <li><a href="#membership">2. Membership</a></li>
+                <li><a href="#contributions">3. Contributions</a></li>
+                <li><a href="#liability">4. Liability</a></li>
+                <li><a href="#termination">5. Termination</a></li>
+                <li><a href="#governing-law">6. Governing Law</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h1>Terms & Conditions</h1>
+            <div class="last-updated">Last Updated: September 2023</div>
+
+            <section class="term-section" id="acceptance">
+                <h2><i class="fas fa-balance-scale"></i> Acceptance of Terms</h2>
+                <p>By accessing or using the ROSCA Investment System ("Service"), you agree to be bound by these Terms...</p>
+                <p class="highlight">Your continued use constitutes acceptance of any modified terms.</p>
+            </section>
+
+            <section class="term-section" id="membership">
+                <h2><i class="fas fa-user-check"></i> Membership Obligations</h2>
+                <p>Members must be at least 18 years old and provide accurate information...</p>
+                <p>You are responsible for maintaining the confidentiality of your account credentials.</p>
+            </section>
+
+            <section class="term-section" id="contributions">
+                <h2><i class="fas fa-hand-holding-usd"></i> Contributions & Payments</h2>
+                <p>All contributions must be made in accordance with the agreed schedule...</p>
+                <p class="highlight">Late payments may result in penalties as outlined in your group agreement.</p>
+            </section>
+
+            <section class="term-section" id="liability">
+                <h2><i class="fas fa-exclamation-triangle"></i> Liability Limitations</h2>
+                <p>The Service is provided "as is" without warranties of any kind...</p>
+                <p>We are not responsible for any financial losses arising from group agreements.</p>
+            </section>
+
+            <section class="term-section" id="termination">
+                <h2><i class="fas fa-ban"></i> Termination Rights</h2>
+                <p>We reserve the right to suspend or terminate accounts violating these terms...</p>
+                <p>Members may withdraw from groups according to established protocols.</p>
+            </section>
+
+            <section class="term-section" id="governing-law">
+                <h2><i class="fas fa-gavel"></i> Governing Law</h2>
+                <p>These terms shall be governed by the laws of [Your Country/State]...</p>
+                <p>Any disputes shall be resolved through binding arbitration.</p>
+            </section>
+        </main>
+
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+
+    <script>
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

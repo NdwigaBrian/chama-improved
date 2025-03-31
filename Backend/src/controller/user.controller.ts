@@ -5,14 +5,24 @@ import { userService } from "../services/user.service";
 let service = new userService()
 
 export class userController {
+    fetchSingleUser(arg0: string, fetchSingleUser: any) {
+        throw new Error("Method not implemented.");
+    }
+    loginUser(arg0: string, loginUser: any) {
+        throw new Error("Method not implemented.");
+    }
+    switchRoles(arg0: string, switchRoles: any) {
+        throw new Error("Method not implemented.");
+    }
+    fetchAll(arg0: string, fetchAll: any) {
+        throw new Error("Method not implemented.");
+    }
 
     async createUser(req: Request, res: Response) {
         try {
 
-            let { name, email, phone_number, password } = req.body
-
-     
-
+            let { username, password } = req.body
+            
             let result = await service.registerUser(req.body)
 
             return res.status(201).json(result)
@@ -21,18 +31,6 @@ export class userController {
             return res.json({
                 error
             })
-        }
-    }
-
-    async loginUser(req: Request, res: Response) {
-        try {
-            let { email, password } = req.body
-
-            let response = await service.login(req.body)
-
-            return res.status(200).json(response)
-        } catch (error) {
-            return res.status(500).json({ error })
         }
     }
 }

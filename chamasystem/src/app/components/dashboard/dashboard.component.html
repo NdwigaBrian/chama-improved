@@ -1,11 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="circle"> Chama System</div>
-</body>
-</html>
+<!-- dashboard.component.html -->
+<div class="dashboard-container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">ROSCA Financial Dashboard</div>
+      <div class="user-info">
+        Welcome, {{ memberName }}! <span class="notification-icon">🔔</span>
+      </div>
+    </div>
+  
+    <!-- Quick Stats and Current Cycle -->
+    <div class="stats-cycle-container">
+      <div class="quick-stats">
+        <h3>Quick Stats</h3>
+        <p>Total Contributions: $5,200</p>
+        <p>Next Payout: Feb 15, 2024</p>
+        <p>Your Balance: $1,300</p>
+      </div>
+      <div class="current-cycle">
+        <h3>Current Rotation Cycle</h3>
+        <p>Cycle: "2024 Q1 Group"</p>
+        <p>Current Beneficiary: Alice Johnson ✅</p>
+        <p>Next in Line: Bob Lee (Due: Feb 28)</p>
+      </div>
+    </div>
+  
+    <!-- Contribution History Chart -->
+    <div class="chart-container">
+      <h3>Contribution History (Chart)</h3>
+      <div class="chart">
+        <!-- Mock chart bars -->
+        <div class="bar" style="height: 60%;"></div>
+        <div class="bar" style="height: 50%;"></div>
+        <div class="bar" style="height: 40%;"></div>
+        <div class="bar" style="height: 30%;"></div>
+      </div>
+      <div class="chart-labels">
+        <span>Jan</span>
+        <span>Feb</span>
+        <span>Mar</span>
+        <span>Apr</span>
+      </div>
+    </div>
+  
+    <!-- Recent Contributions and Upcoming Deadlines -->
+    <div class="contributions-deadlines-container">
+      <div class="recent-contributions">
+        <h3>Recent Contributions</h3>
+        <ul>
+          <li>1. Jan 10: Paid $200 ✅</li>
+          <li>2. Feb 5: Paid $200 ✅</li>
+          <li>
+            <input type="number" placeholder="Enter amount" />
+            <button class="pay-button">Pay Now</button>
+          </li>
+        </ul>
+      </div>
+      <div class="upcoming-deadlines">
+        <h3>Upcoming Deadlines</h3>
+        <ul>
+          <li>1. Feb 15: Payout to Alice</li>
+          <li>2. Feb 28: Your Next Contribution</li>
+        </ul>
+      </div>
+    </div>
+  </div>
