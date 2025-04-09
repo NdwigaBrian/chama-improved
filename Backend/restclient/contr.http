@@ -1,0 +1,8 @@
+### Get Contributions for a specific cycle and round
+POST http://localhost:3000/api/getContributions
+Content-Type: application/json
+
+{
+  "cycle": 1,
+  "round": 2
+}

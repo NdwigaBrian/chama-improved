@@ -1,0 +1,38 @@
+<div class="admin-dashboard">
+    <h2>Admin Contributions Dashboard</h2>
+    <div class="form-group">
+      <label for="cycle">Cycle Number (e.g., 1 or 2):</label>
+      <input id="cycle" type="number" [(ngModel)]="cycle" min="1" max="2" />
+    </div>
+    <div class="form-group">
+      <label for="round">Round Number (1 - n):</label>
+      <input id="round" type="number" [(ngModel)]="round" min="1" />
+    </div>
+    <button (click)="getContributions()">Get Contributions</button>
+  
+    <div *ngIf="dataReady" class="results">
+      <h3>Cycle {{ cycle }} - Round {{ round }} Contributions</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Member #</th>
+            <th>Contribution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let con of contributions; let idx = index">
+            <td>{{ idx + 1 }}</td>
+            <td>{{ con }}</td>
+          </tr>
+          <tr class="total">
+            <td>Total</td>
+            <td>{{ total }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div *ngIf="errorMessage" class="error">
+      {{ errorMessage }}
+    </div>
+  </div>
+  

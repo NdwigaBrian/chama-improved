@@ -1,8 +1,9 @@
 POST http://localhost:3000/users/create
+Content-Type: application/json
 
 {
-    "username": "jren",
-    "password": "Cass@123"
+    "username": "user2",
+    "password": "B@123"
 }
 
 
@@ -11,8 +12,8 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-    "username": "Peter Doe",
-    "password": "Pass@123"
+    "username": "user5",
+    "password": "E@123"
 }
 
 ###HELLO

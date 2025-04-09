@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
-import { login_details } from '../../interfaces/interfaces';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
 
 
@@ -13,8 +12,6 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  membershipId: string = '';
-  securePin: string = '';
   loginError: boolean = false;
   loginSuccess: boolean = false;
   error: string = '';
@@ -34,7 +31,7 @@ export class LoginComponent {
         // Handle successful login
         this.authService.isLoggedIn = true;
         localStorage.setItem('user_id', res.info.id);
-        this.router.navigate(['dashboard', 'posts']);
+        this.router.navigate(['dashboard']);
       } else if (res.error) {
         this.loginError = true;
         this.error = res.error;
